@@ -21,7 +21,7 @@ sudo php bin/magento setup:static-content:deploy -f
 sudo php bin/magento cache:clean
 ```
 
-#### Option 2.1
+#### Option 2.2
 Install plugin in mode production
 ```bash
 cd your_project_path/
