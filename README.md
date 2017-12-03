@@ -16,6 +16,7 @@ Install plugin in mode developer
 cd your_project_path/
 sudo php bin/magento deploy:mode:set developer
 sudo php bin/magento setup:upgrade
+sudo php bin/magento indexer:reindex
 sudo php bin/magento setup:di:compile
 sudo php bin/magento setup:static-content:deploy -f
 sudo php bin/magento cache:clean
@@ -26,8 +27,9 @@ Install plugin in mode production
 ```bash
 cd your_project_path/
 sudo php bin/magento deploy:mode:set production
-sudo php bin/magento maintenance:enabled
+sudo php bin/magento maintenance:enable
 sudo php bin/magento setup:upgrade
+sudo php bin/magento indexer:reindex
 sudo php bin/magento setup:di:compile
 sudo php bin/magento setup:static-content:deploy --skip-compilation
 sudo php bin/magento cache:clean
